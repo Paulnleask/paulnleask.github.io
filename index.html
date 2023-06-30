@@ -41,6 +41,31 @@
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/dark_mode.js"></script>
+
+    <style>
+      .container {
+        position: relative;
+        width: 100%;
+      }
+      
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: 20%;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+      
+      .container:hover .image {
+        opacity: 1;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+      }
+      
+      </style>
     
 
   </head>
@@ -124,7 +149,9 @@
     -->
 
     <!-- Fallback to the original file -->
-    <img class="img-fluid z-dept-1 rounded" src="/assets/img/Me.jpg" alt="prof_pic.png">
+    <div class="container">
+      <img class="image z-dept-1 rounded" src="/assets/img/Me_Colour.jpg" alt="prof_pic.png" style ="width:100%">
+    </div>
 
   </picture>
 

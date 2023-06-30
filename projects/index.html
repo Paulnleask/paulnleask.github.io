@@ -41,6 +41,30 @@
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/dark_mode.js"></script>
     
+    <style>
+      .container {
+        position: relative;
+        width: 100%;
+      }
+      
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+      
+      .container:hover .image {
+        opacity: 1;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+      }
+      
+      </style>
 
   </head>
 
@@ -116,23 +140,25 @@
   <a href="/projects/1_project/">
       <div class="card hoverable">
 <figure>
-
+  
   <picture>
     <!-- <source media="(max-width: 480px)" srcset="/assets/img/12-480.webp" />
     <source media="(max-width: 800px)" srcset="/assets/img/12-800.webp" />
     <source media="(max-width: 1400px)" srcset="/assets/img/12-1400.webp" />
     -->
-
+    
     <!-- Fallback to the original file -->
-    <img src="/assets/img/Plot_B108.png" alt="project thumbnail">
+    <div class="container">
+    <img src="/assets/img/Plot_B108.png" alt="project thumbnail" class="image" style ="width:100%">
+    </div>
 
   </picture>
 
 </figure>
 
         <div class="card-body">
-          <h2 class="card-title text-lowercase">Data Science</h2>
-          <p class="card-text">Encompasses Data Science applications</p>
+          <h2 class="card-title text-lowercase">Large skyrmions</h2>
+          <p class="card-text">Skyrmions built from alpha particle chunks</p>
           <div class="row ml-1 mr-1 p-0">
           </div>
         </div>
@@ -153,7 +179,9 @@
     -->
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/SkyrmePhases.jpg" alt="project thumbnail">
+    <div class="container">
+      <img src="/assets/img/SkyrmePhases.jpg" alt="project thumbnail" class="image" style ="width:100%">
+    </div>
 
   </picture>
 
@@ -182,7 +210,10 @@
     -->
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/Plot_AlphaParticleChunk.png" alt="project thumbnail">
+    <div class="container">
+      <img src="/assets/img/Plot_AlphaParticleChunk.png" class="image" style ="width:100%">
+    </div>
+    
 
   </picture>
 
