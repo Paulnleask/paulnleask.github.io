@@ -40,6 +40,32 @@
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/dark_mode.js"></script>
+
+    <style>
+      .container {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+      }
+      
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .0s ease;
+        backface-visibility: hidden;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+      
+      .image:hover {
+        opacity: 1;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+      }
+      
+    </style>
     
 
   </head>
@@ -90,9 +116,9 @@
                 <a class="nav-link" href="/talks/">talks</a>
               </li>
 
-              <!-- Resources -->
+              <!-- teaching -->
               <li class="nav-item ">
-                <a class="nav-link" href="/resources/">resources</a>
+                <a class="nav-link" href="/teaching/">teaching</a>
               </li>
 
               <!-- CV -->
@@ -162,7 +188,10 @@
     -->
 
     <!-- Fallback to the original file -->
-    <img class="img-fluid rounded z-depth-1" src="/assets/img/Deep%20Q-Network.png" title="example image">
+    <div class="container">
+      <img src="/assets/img/SkyrmePhases.jpg" alt="project thumbnail" class="image" style ="width:100%">
+    </div>
+    
 
   </picture>
 
@@ -208,7 +237,9 @@
     -->
 
     <!-- Fallback to the original file -->
+    <div class="container3">
     <img class="img-fluid rounded z-depth-1" src="/assets/img/A_Computer_Creates_Abstract_Art.png" title="A Computer Creates Abstract ARt">
+  </div>
 
   </picture>
 
